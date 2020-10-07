@@ -13,7 +13,8 @@ body {
 header {
   width: 100%; }
   header h1 {
-    text-align: center; }
+    text-align: center;
+    margin-top: 30px; }
 
 .row {
   width: 100%; }
@@ -69,11 +70,16 @@ img {
 .references {
   width: 14em;
   height: 20em;
-  background-color: azure; }
+  background-color: azure;
+  box-shadow: 1px 1px 3px grey; }
   .references .icon {
     margin-top: 70px; }
-    .references .icon i {
-      font-size: xx-large; }
+    .references .icon a {
+      color: black;
+      font-size: xx-large;
+      text-decoration: none; }
+      .references .icon a:hover {
+        color: orange; }
 
 .curriculo {
   width: 80%;
@@ -105,6 +111,11 @@ footer {
   margin-top: 40px;
   background-color: white;
   background-image: linear-gradient(to right, orange, whitesmoke, aquamarine, aqua); }
+  footer a {
+    text-decoration: none;
+    color: black; }
+    footer a:hover {
+      color: orangered; }
 
 @media only screen and (max-width: 990px) {
   .row:first-of-type .row:last-of-type {
@@ -149,6 +160,10 @@ footer {
   .curriculo {
     width: 100%;
     margin-top: 30px;
-    padding: 10px; } }
+    padding: 10px; }
+
+  footer {
+    display: flex;
+    flex-flow: row wrap; } }
 
 /*# sourceMappingURL=style.css.map */
